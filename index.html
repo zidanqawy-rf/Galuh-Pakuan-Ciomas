@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galuh Pakuan Ciomas</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fff2ea;
+        color: #5a4b1d;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        background-color: #ffdd57;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      h1,
+      h3 {
+        color: #744c00;
+        font-weight: 700;
+      }
+
+      h2 {
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .carousel-caption {
+        background: rgba(120, 90, 0, 0.6);
+        border-radius: 0.5rem;
+      }
+
+      .content-section {
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background-color: #965925;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(180, 140, 0, 0.3);
+      }
+
+      footer {
+        background-color: #ffdd57;
+        text-align: center;
+        padding: 1rem 0 1.5rem 0;
+        margin-top: 3rem;
+        color: #5a4b1d;
+        font-weight: 600;
+      }
+
+      .clickable-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(180, 140, 0, 0.5);
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      .clickable-image:hover {
+        transform: scale(1.05);
+      }
+
+      .social-icons {
+        margin-top: 0.75rem;
+      }
+
+      .social-icons a {
+        color: #5a4b1d;
+        margin: 0 0.8rem;
+        font-size: 1.8rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #744c00;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        height: 80px;
+        margin: 0.5rem;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+
+        .carousel-caption {
+          font-size: 0.9rem;
+          padding: 0.5rem;
+        }
+
+        .carousel-item img {
+          height: 250px !important;
+        }
+
+        .content-section {
+          padding: 1rem;
+          margin: 1rem;
+        }
+
+        .clickable-image {
+          height: 150px;
+        }
+
+        .social-icons a {
+          font-size: 1.5rem;
+          margin: 0 0.5rem;
+        }
+
+        .logo-img {
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+       <div class="d-flex align-items-center justify-content-center mb-4 flex-column flex-md-row text-center">
+          <img src="img/Logo.png" alt="Logo DKR" class="logo-img" />
+          <h1 class="m-2">Galuh Pakuan Ciomas</h1>
+        </div>
+
+        <div
+          id="activityCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3500"
+        >
+          <div class="carousel-inner rounded-4 shadow">
+            <!--Kegiatan 1-->
+            <div class="carousel-item active">
+              <img src="img/PWR.jpg" class="d-block w-100" alt="PWR" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Perkemahan Wirakarya Ranting</h5>
+              </div>
+            </div>
+
+            <!--Kegiatan 2-->
+            <div class="carousel-item">
+              <img src="img/GladiTangguh.jpg" class="d-block w-100" alt="Pramuka Hiking" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Gladi Tangguh</h5>
+              </div>
+            </div>
+
+            <!--Kegiatan 3-->
+            <div class="carousel-item">
+              <img src="img/GiatPrestasi.png" class="d-block w-100" alt="GiatPrestasi" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Marjan</h5>
+              </div>
+            </div>
+
+            <!--Kegiatan 4-->
+            <div class="carousel-item">
+              <img src="img/Pengembaraan.jpg" class="d-block w-100" alt="Pengembaraan" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pengembaraan</h5>
+              </div>
+            </div>
+            <!--Kegiatan 5-->
+            <div class="carousel-item">
+              <img src="img/GiatBakti.jpg" class="d-block w-100" alt="KemahBakti" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Kegiatan Kemah Bakti</h5>
+              </div>
+            </div>
+            <!--Kegiatan 6-->
+            <div class="carousel-item">
+              <img src="img/Rainas2.jpg" class="d-block w-100" alt="Rainas" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Raimuna Nasional</h5>
+              </div>
+            </div>
+            <!--Kegiatan 7-->
+            <div class="carousel-item">
+              <img src="img/Pelantikan.jpg" class="d-block w-100" alt="Pelantikan" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pelantikan Dewan Kerja Ranting masa bakti 2024-2027</h5>
+              </div>
+            </div>
+            <!--Kegiatan 8-->
+            <div class="carousel-item">
+              <img src="img/Sidparan.jpg" class="d-block w-100" alt="Sidparan" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sidang Paripurna Ranting</h5>
+              </div>
+            </div>
+            <!--Kegiatan 9-->
+            <div class="carousel-item">
+              <img src="img/UUJ.jpg" class="d-block w-100" alt="UUJ" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Ucap Ulang Janji</h5>
+              </div>
+            </div>
+            <!--Kegiatan 10-->
+            <div class="carousel-item">
+              <img src="img/Hut Pramuka ke-63.jpg" class="d-block w-100" alt="HUT Pramuka" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Kegiatan Hari Ulang Tahun Pramuka Ke-63</h5>
+              </div>
+            </div>
+            <!--Kegiatan 11-->
+            <div class="carousel-item">
+              <img src="img/Gebyar.jpg" class="d-block w-100" alt="Gebyar HUT" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Gebyar Hut Pramuka ke-63</h5>
+              </div>
+            </div>
+            <!--Kegiatan 12-->
+            <div class="carousel-item">
+              <img src="img/Lagata.jpg" class="d-block w-100" alt="Latgab Digital" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Latihan Gabungan Digitalisasi</h5>
+              </div>
+            </div>
+            <!--Kegiatan 13-->
+            <div class="carousel-item">
+              <img src="img/GiatInovasi2.jpg" class="d-block w-100" alt="Giat Inovasi" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Giat Inovasi</h5>
+              </div>
+            </div>
+            <!--Kegiatan 14-->
+            <div class="carousel-item">
+              <img src="img/PWC.jpg" class="d-block w-100" alt="PWC" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Perkemahan Wirakarya Cabang</h5>
+              </div>
+            </div>
+            <!--Kegiatan 15-->
+            <div class="carousel-item">
+              <img src="img/Raida.jpg" class="d-block w-100" alt="Raimuna Daerah" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Raimuna Daerah Jawa Barat</h5>
+              </div>
+            </div>
+            <!--Kegiatan 16-->
+            <div class="carousel-item">
+              <img src="img/Raicab.jpg" class="d-block w-100" alt="Raicab" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Raimuna Cabang Kabupaten Bogor</h5>
+              </div>
+            </div>
+            <!--Kegiatan 17-->
+            <div class="carousel-item">
+              <img src="img/Garuda.jpg" class="d-block w-100" alt="Garuda" style="height: 600px; object-fit: cover" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleksi Garuda</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tombol navigasi carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#activityCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sebelumnya</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#activityCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Berikutnya</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="content-section">
+        <h2 class="text-center mb-4">Kegiatan-Kegiatan</h2>
+        <div class="row g-4">
+          <!-- Kegiatan 1 PWR-->
+          <div class="col-md-4">
+            <img
+              src="img/PWR.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal1"
+              alt="Camping"
+            />
+          </div>
+          <!-- Kegiatan 2 Gladi Tangguh-->
+          <div class="col-md-4">
+            <img
+              src="img/GladiTangguh.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal2"
+              alt="GladiTangguh"
+            />
+          </div>
+          <!-- Kegiatan 3 Giat Prestasi-->
+          <div class="col-md-4">
+            <img
+              src="img/GiatPrestasi.png"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal3"
+              alt="GiatPrestasi"
+            />
+          </div>
+          <!-- Kegiatan 4 Pengembaraan-->
+          <div class="col-md-4">
+            <img
+              src="img/Pengembaraan.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal4"
+              alt="Pengembaraan"
+            />
+          </div>
+          <!-- Kegiatan 5 Kemah Bakti-->
+          <div class="col-md-4">
+            <img
+              src="img/GiatBakti.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal5"
+              alt="KemahBakti"
+            />
+          </div>
+          <!-- Kegiatan 6 Rainas-->
+          <div class="col-md-4">
+            <img
+              src="img/Rainas.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal6"
+              alt="Rainas"
+            />
+          </div>
+          <!-- Kegiatan 7 Pelantikan-->
+          <div class="col-md-4">
+            <img
+              src="img/Pelantikan.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal7"
+              alt="Pelantikan"
+            />
+          </div>
+          <!-- Kegiatan 8 Sidparan-->
+          <div class="col-md-4">
+            <img
+              src="img/Sidparan.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal8"
+              alt="Sidparan"
+            />
+          </div>
+          <!-- Kegiatan 9 HUT Pramuka ke-63-->
+          <div class="col-md-4">
+            <img
+              src="img/UUJ.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal9"
+              alt="UUJ"
+            />
+          </div>
+          <!-- Kegiatan 10 HUT Pramuka ke-63-->
+          <div class="col-md-4">
+            <img
+              src="img/Hut Pramuka ke-63.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal10"
+              alt="HUT Pramuka ke-63"
+            />
+          </div>
+          <!-- Kegiatan 11 Gebyar HUT Pramuka ke-63-->
+          <div class="col-md-4">
+            <img
+              src="img/Gebyar.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal11"
+              alt="Gebyar"
+            />
+          </div>
+          <!-- Kegiatan 12 Lagata-->
+          <div class="col-md-4">
+            <img
+              src="img/Lagata.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal12"
+              alt="Lagata"
+            />
+          </div>
+          <!-- Kegiatan 13 Giat Inovasi-->
+          <div class="col-md-4">
+            <img
+              src="img/GiatInovasi.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal13"
+              alt="GiatInovasi"
+            />
+          </div>
+          <!-- Kegiatan 14 PWC-->
+          <div class="col-md-4">
+            <img
+              src="img/PWC.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal14"
+              alt="PWC"
+            />
+          </div>
+          <!-- Kegiatan 15 Raida-->
+          <div class="col-md-4">
+            <img
+              src="img/Raida.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal15"
+              alt="Raida"
+            />
+          </div>
+          <!-- Kegiatan 16 Raicab-->
+          <div class="col-md-4">
+            <img
+              src="img/Raicab.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal16"
+              alt="Raicab"
+            />
+          </div>
+          <!-- Kegiatan 17 Garuda-->
+          <div class="col-md-4">
+            <img
+              src="img/Garuda.jpg"
+              class="clickable-image"
+              data-bs-toggle="modal"
+              data-bs-target="#modal17"
+              alt="Garuda"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL Kegiatan 1 dengan Carousel -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Perkemahan Wirakarya Ranting</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/PWR.jpg" class="d-block w-100 rounded" alt="PWR">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/PWR2.jpg" class="d-block w-100 rounded" alt="PWR2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/PWR3.jpg" class="d-block w-100 rounded" alt="PWR3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+              Kegiatan Perkemahan Wirakarya Ranting yang dilaksanakan di Kp. Duren Desa Ciomas.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- MODAL Kegiatan 2 dengan Carousel -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Gladi Tangguh</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/GladiTangguh.jpg" class="d-block w-100 rounded" alt="GladiTangguh">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GladiTangguh2.jpg" class="d-block w-100 rounded" alt="GladiTangguh2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GladiTangguh3.jpg" class="d-block w-100 rounded" alt="GladiTangguh3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+              Kegiatan Gladi Tanggguh, Gladian Pimpinan Satuan dan Sistem Administrasi Satuan yang dilaksanakan di SDN Kotabatu 3.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- MODAL Kegiatan 3 dengan Carousel -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">Giat Prestasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/GiatPrestasi.png" class="d-block w-100 rounded" alt="GiatPrestasi">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GiatPrestasi2.png" class="d-block w-100 rounded" alt="GiatPrestasi2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GiatPrestasi3.png" class="d-block w-100 rounded" alt="GiatPrestasi3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Kegiatan Marjan yang dilaksanakan secara daring melalui zoom. 
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 4 dengan Carousel -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal4Label">Pengembaraan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Pengembaraan.jpg" class="d-block w-100 rounded" alt="Pengembaraan">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Pengembaraan2.jpg" class="d-block w-100 rounded" alt="Pengembaraan2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Pengembaraan3.jpg" class="d-block w-100 rounded" alt="Pengembaraan3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Kegiatan Pengembaraan menuju lokasi perkemahan.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 5 dengan Carousel -->
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal5Label">Kemah Bakti</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal5" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/GiatBakti.jpg" class="d-block w-100 rounded" alt="KemahBakti">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GiatBakti2.jpg" class="d-block w-100 rounded" alt="KemahBakti2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GiatBakti3.jpg" class="d-block w-100 rounded" alt="KemahBakti3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal5" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Kegiatan Kemah Bakti Merenovasi MCK yang dilaksanakan di Kp. Duren. 
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 6 dengan Carousel -->
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal6Label">Raimuna Nasional</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal6" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Rainas.jpg" class="d-block w-100 rounded" alt="Rainas">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Rainas2.jpg" class="d-block w-100 rounded" alt="Rainas2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Rainas3.jpg" class="d-block w-100 rounded" alt="Rainas3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal6" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal6" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Partisipasi Kegiatan Nasional, Raimuna Nasional yang dilaksankan di Buperta Cibubur.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 7 dengan Carousel -->
+    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal7Label">Pelantikan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal7" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Pelantikan.jpg" class="d-block w-100 rounded" alt="Pelantikan">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Pelantikan2.jpg" class="d-block w-100 rounded" alt="Pelantikan2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Pelantikan3.jpg" class="d-block w-100 rounded" alt="Pelantikan3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal7" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal7" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Pelantikan Dewan Kerja Ranting Masa Bakti 2024-2027 yang dilaksanan di Aula kecamatan Ciomas. 
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 8 dengan Carousel -->
+    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal8Label">Sidparan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal8" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Sidparan.jpg" class="d-block w-100 rounded" alt="Sidparan">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Sidparan2.jpg" class="d-block w-100 rounded" alt="Sidparan2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Sidparan3.jpg" class="d-block w-100 rounded" alt="Sidparan3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal8" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal8" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Kegiatan Hari Ulang Tahun Pramuka ke-63 di kantor kecamatan Ciomas.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 9 dengan Carousel -->
+    <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal9Label">Ucap Ulang Janji</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal9" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/UUJ.jpg" class="d-block w-100 rounded" alt="UUJ">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/UUJ2.jpg" class="d-block w-100 rounded" alt="UUJ2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/UUJ3.jpg" class="d-block w-100 rounded" alt="UUJ3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal9" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal9" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Ucap Ulang Janji yang dilaksanan di kantor kecamatan Ciomas.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 10 dengan Carousel -->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal10Label">HUT Pramuka ke-63</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal10" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Hut Pramuka ke-63.jpg" class="d-block w-100 rounded" alt="Hut">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Hut Pramuka ke-63_2.jpg" class="d-block w-100 rounded" alt="Hut">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Hut Pramuka ke-63_3.jpg" class="d-block w-100 rounded" alt="Hut">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal10" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal10" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Peringatan Hari Ulang Tahun Pramuka ke-63 yang dilaksanan di kantor Kecamatan Ciomas.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 11 dengan Carousel -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal11Label">Gebyar HUT Pramuka ke-63</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal11" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Gebyar.jpg" class="d-block w-100 rounded" alt="Gebyar">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Gebyar2.jpg" class="d-block w-100 rounded" alt="Gebyar2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Gebyar3.jpg" class="d-block w-100 rounded" alt="Gebyar3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal11" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal11" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Partisipan kegiatan Gebyar HUT Pramuka ke-63 dan Inagurasi ATAS di Stadion Pakansari.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 12 dengan Carousel -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal12Label">LAGATA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal12" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Lagata.jpg" class="d-block w-100 rounded" alt="Lagata">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Lagata2.jpg" class="d-block w-100 rounded" alt="Lagata2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Lagata3.jpg" class="d-block w-100 rounded" alt="Lagata3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal12" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal12" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Latihan Gabungan Digitalisasi yang di laksanakan di SMK Kusuma Bangsa. 
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 13 dengan Carousel -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modal13Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal13Label">Giat Inovasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal13" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/GiatInovasi.jpg" class="d-block w-100 rounded" alt="GiatInovasi">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GiatInovasi2.jpg" class="d-block w-100 rounded" alt="GiatInovasi">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/GiatInovasi3.jpg" class="d-block w-100 rounded" alt="GiatInovasi">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal13" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal13" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Kegiatan Inovasi tentang Digital yang di laksanakan di SMK Kusuma Bangsa.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 14 dengan Carousel -->
+    <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modal14Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal14Label">Perkemahan Wirakarya Cabang</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal14" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/PWC.jpg" class="d-block w-100 rounded" alt="PWC">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/PWC2.jpg" class="d-block w-100 rounded" alt="PWC2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/PWC3.jpg" class="d-block w-100 rounded" alt="PWC3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal14" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal14" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Partisipasi Kegiatan Cabang, Perkemahan Wirakarya Cabang di Buper Cimandala.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 14 dengan Carousel -->
+    <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="modal15Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal15Label">Raimuna Daerah</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal15" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Raida.jpg" class="d-block w-100 rounded" alt="Sidparan">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Raida2.jpg" class="d-block w-100 rounded" alt="Sidparan2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Raida3.jpg" class="d-block w-100 rounded" alt="Sidparan3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal15" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal15" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Partisipasi kegiatan daerah , Raimuna Daerah Jawa Barat di Kiarapayung Camp,Sumedang. 
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 16 dengan Carousel -->
+    <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="modal16Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal16Label">Raimuna Cabang Kabupaten Bogor</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal16" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Raicab.jpg" class="d-block w-100 rounded" alt="Raicab">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Raicab2.jpg" class="d-block w-100 rounded" alt="Raicab">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Raicab3.jpg" class="d-block w-100 rounded" alt="Raicab">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal16" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal16" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Partisipasi Kegiatan Cabang, Raimuna Cabang Kabupaten Bogor di Buper Cimandala.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL Kegiatan 17 dengan Carousel -->
+    <div class="modal fade" id="modal17" tabindex="-1" aria-labelledby="modal17Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal17Label">Seleksi Garuda</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselModal17" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Garuda.jpg" class="d-block w-100 rounded" alt="Garuda">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Garuda2.jpg" class="d-block w-100 rounded" alt="Garuda2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Garuda3.jpg" class="d-block w-100 rounded" alt="Garuda3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal17" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal17" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+            <p class="mt-3">
+                Kegiatan Seleksi Garuda yang dilaksanakan di SDN Kotabatu 6.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+
+    <footer>
+      <p>© 2021 Galuh Pakuan Ciomas. All rights reserved.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/dkr_ciomas/"
+          target="_blank"
+          title="Instagram"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@dkrciomas8187"
+          target="_blank"
+          title="YouTube"
+        >
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@dkr_ciomas"
+          target="_blank"
+          title="TikTok"
+        >
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
